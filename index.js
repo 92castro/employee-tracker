@@ -135,7 +135,6 @@ function startPrompt() {
             db.query(
               `UPDATE employee SET role_id="${data.rUpdate}" WHERE id="${data.eUpdate}"`,
               function (err, res) {
-                console.log(res);
                 if (err) {
                   console.log(err);
                 } else {
